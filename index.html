@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="title">Dictionnaire de mots informatiques </div>
+    <div class="princpale-table" >
+        <div id="tab1" >
+            <ul class = "table1">
+                <li data-language="Developpement web" >
+                   
+                <button class="affiche" onclick="afficherListe(this)">⧁</button>
+               
+                Developpement web
+                    <button onclick="add_before(this)" >⊷</button>
+                    <button id="sup" onclick="deletbutt(this)">⋫</button>
+                    <button onclick="add_after(this)" >⊶</button>
+                   
+                <ul>
+                    <li data-language="cote client">
+                        <button class="affiche" onclick="afficherListe(this)">⧁</button>
+                       
+                        cote client
+                        <button onclick="add_before(this)" >⊷</button>
+                        <button id="sup" onclick="deletbutt(this)">⋫</button>
+                        <button onclick="add_after(this)" >⊶</button>
+                        <ul>
+                            <li data-language="HTML" class="html">
+
+                                HTML
+                                <button onclick="add_before(this)" >⊷</button>
+                                <button id="sup" onclick="deletbutt(this)">⋫</button>
+                                <button onclick="add_after(this)" >⊶</button>
+                            </li>
+                            <li data-language="CSS" class = 'css'>CSS
+                              <button onclick="add_before(this)">⊷</button>
+                                <button id="sup" onclick="deletbutt(this)">⋫</button>
+                                <button onclick="add_after(this)">⊶</button>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li data-language="cote serveur"> 
+                        <button class="affiche" onclick="afficherListe(this)">⧁</button>
+                        
+                        cote serveur
+                        <button onclick="add_before(this)">⊷</button>
+                        <button id="sup" onclick="deletbutt(this)">⋫</button>
+                        <button onclick="add_after(this)">⊶</button>
+                        <ul>
+                            <li data-language="php">
+                                <button class="affiche" onclick="afficherListe(this)">⧁</button>
+                                php
+                                <button onclick="add_before(this)">⊷</button>
+                                <button id="sup" onclick="deletbutt(this)">⋫</button>
+                                <button onclick="add_after(this)">⊶</button>
+                            </li>
+                        </ul>
+                        
+                    </li>
+                </ul>    
+                </li> 
+                <li data-language="Conception"> 
+                   <button class="affiche" onclick="afficherListe(this)">⧁</button>
+               
+                     Conception
+                    <button onclick="add_before(this)">⊷</button>
+                    <button id="sup" onclick="deletbutt(this)">⋫</button>
+                    <button onclick="add_after(this)">⊶</button>
+                </li>
+                <li data-language="BDD">
+                    <button class="affiche" onclick="afficherListe(this)">⧁</button>
+               
+                     BDD
+                    <button onclick="add_before(this)">⊷</button>
+                    <button id="sup" onclick="deletbutt(this)">⋫</button>
+                    <button onclick="add_after(this)">⊶</button>
+                </li>
+            </ul>
+        </div>
+        <div id="btn-change">
+            <span onclick="changer_pos() " class = 'ech_bt'>⊲ ⊳</span>
+        </div>
+        <div id="table-2">
+            <H1 id="title"> TITRE</H1>
+            <p id="def"> vide </p>
+            <img id="img" src = "https://static.vecteezy.com/system/resources/thumbnails/022/014/063/small/missing-picture-page-for-website-design-or-mobile-app-design-no-image-available-icon-vector.jpg"/>
+        </div>
+    </div>
+    <div class = 'last'>Nombre de mots :
+        <p class = 'total' style="display: inline-block;"></p> 
+         - Nombre de categorie : 3 - Nombre moyen de sous-categorie : 4 - Nombre moyen de mots par categorie : 84 </div>
+</body>
+</html>
